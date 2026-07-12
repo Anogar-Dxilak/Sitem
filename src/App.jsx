@@ -434,7 +434,7 @@ export default function App() {
 
         {/* SAĞ ALAN: INTERACTIVE TERMINAL WIDGET (1 Kolon Kaplar) */}
         <div className="lg:col-span-1">
-          <div className="lg:sticky lg:top-20 border border-gray-900 rounded-lg overflow-hidden shadow-2xl bg-[#050505]">
+          <div className="sticky top-[88px] border border-gray-900 rounded-lg overflow-hidden shadow-2xl bg-[#050505]">
             {/* Terminal Top Bar */}
             <div className="bg-[#0f0f0f] px-4 py-2 flex items-center justify-between border-b border-gray-900">
               <div className="flex space-x-2">
