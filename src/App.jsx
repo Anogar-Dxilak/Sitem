@@ -226,9 +226,9 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-gray-300 font-sans selection:bg-[#00ff66] selection:text-black overflow-x-hidden">
+    <div className="min-h-screen bg-[#0a0a0a] text-gray-300 font-sans selection:bg-[#00ff66] selection:text-black">
       
-      <header className="border-b border-gray-900 bg-[#0f0f0f]/80 backdrop-blur sticky top-0 z-50 px-4 sm:px-6 py-2 sm:py-2.5 flex flex-col items-center gap-1.5 sm:gap-2">
+      <header className="border-b border-gray-900 bg-[#0f0f0f]/80 backdrop-blur sticky top-0 z-50 px-4 sm:px-6 py-2 sm:py-2.5 flex flex-col items-center gap-1.5 sm:gap-2 overflow-x-hidden">
         <div className="flex items-center space-x-2 w-full justify-center">
           <span className="h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full bg-[#00ff66] animate-pulse flex-shrink-0"></span>
           <h1 className="font-mono font-bold text-base sm:text-xl tracking-wider text-white">EGEMEN DER PORTFOLYO</h1>
