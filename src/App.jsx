@@ -89,7 +89,24 @@ const EDUCATION = {
 };
 
 const PROJECTS = [
-  { title: 'Truck Automation System', tech: 'JavaFX / Java', desc: 'Üniversite kapsamında geliştirilmiş kapsamlı lojistik ve otomasyon sistemi projesi.' }
+  {
+    title: 'Sefer Otomasyon Sistemi',
+    tech: 'C# / .NET',
+    desc: 'İSTE kapsamında geliştirilen veritabanı destekli görsel programlama projesi. Lojistik ve sefer yönetimi süreçlerini otomatize eder.',
+    link: 'https://github.com/Anogar-Dxilak/Sefer_otomasyon'
+  },
+  {
+    title: 'CV Oluşturma Uygulaması',
+    tech: 'PHP / HTML / CSS / AJAX',
+    desc: 'Ajax, PHP, HTML ve CSS teknolojilerini geliştirmek amacıyla yazılmış dinamik CV oluşturma web uygulaması.',
+    link: 'https://github.com/Anogar-Dxilak/CV-olusturma'
+  },
+  {
+    title: 'Tır Otomasyon Sistemi',
+    tech: 'JavaFX / Java',
+    desc: 'Üniversite kapsamında geliştirilmiş kapsamlı lojistik ve tır otomasyon sistemi projesi. Araç takibi, sefer planlaması ve yük yönetimi özelliklerini içermektedir.',
+    link: 'https://github.com/Anogar-Dxilak/Tir-Otomasyonu'
+  }
 ];
 
 const ARTICLES = [
@@ -358,19 +375,27 @@ export default function App() {
             </div>
           </section>
 
-          {/* PROJECTS & PUBLICATIONS */}
           <section id="projects" className="grid grid-cols-1 md:grid-cols-2 gap-6 scroll-mt-32">
             <div className="space-y-4">
-              <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] border-b border-gray-900 pb-2">System Automation</h2>
-              {PROJECTS.map((proj, index) => (
-                <div key={index} className="bg-[#0f0f0f] border border-gray-900 rounded p-5 h-full flex flex-col justify-between hover:border-gray-800 transition">
-                  <div>
-                    <h3 className="text-white font-bold mb-2">{proj.title}</h3>
-                    <p className="text-sm text-gray-400 leading-relaxed">{proj.desc}</p>
-                  </div>
-                  <span className="text-xs font-mono text-[#00ff66] mt-4">{proj.tech}</span>
-                </div>
-              ))}
+              <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] border-b border-gray-900 pb-2">Projects</h2>
+              {PROJECTS.map((proj, index) => {
+                const cardClass = "block bg-[#0f0f0f] border border-gray-900 rounded p-5 flex flex-col justify-between hover:border-[#00ff66]/40 transition group";
+                const inner = (
+                  <>
+                    <div>
+                      <h3 className="text-white font-bold mb-2 group-hover:text-[#00ff66] transition">{proj.title}</h3>
+                      <p className="text-sm text-gray-400 leading-relaxed">{proj.desc}</p>
+                    </div>
+                    <div className="flex items-center justify-between mt-4">
+                      <span className="text-xs font-mono text-[#00ff66]">{proj.tech}</span>
+                      {proj.link && <span className="text-[10px] font-mono text-gray-600 group-hover:text-[#00ff66] transition">GitHub →</span>}
+                    </div>
+                  </>
+                );
+                return proj.link
+                  ? <a key={index} href={proj.link} target="_blank" rel="noopener noreferrer" className={cardClass}>{inner}</a>
+                  : <div key={index} className={cardClass}>{inner}</div>;
+              })}
             </div>
 
             <div id="articles" className="space-y-4">
