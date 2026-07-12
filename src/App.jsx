@@ -70,7 +70,7 @@ export default function App() {
       <header className="border-b border-gray-900 bg-[#0f0f0f]/80 backdrop-blur sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <span className="h-3 w-3 rounded-full bg-[#00ff66] animate-pulse"></span>
-          <h1 className="font-mono font-bold text-xl tracking-wider text-white">EGEMEN_DER //PORTFOLIO</h1>
+          <h1 className="font-mono font-bold text-xl tracking-wider text-white">EGEMEN DER PORTFOLIO</h1>
         </div>
         <nav className="space-x-6 font-mono text-sm">
           <a href="#experience" className="hover:text-[#00ff66] transition">Experience</a>
@@ -87,7 +87,7 @@ export default function App() {
           
           {/* SKILLS */}
           <section>
-            <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] mb-4">// Core Specializations</h2>
+            <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] mb-4">Specializations</h2>
             <div className="flex flex-wrap gap-2">
               {SKILLS.map((skill, index) => (
                 <span key={index} className="bg-[#121212] border border-gray-800 text-gray-400 font-mono text-xs px-3 py-1.5 rounded hover:border-[#00ff66] transition duration-300">
@@ -99,7 +99,7 @@ export default function App() {
 
           {/* EXPERIENCE */}
           <section id="experience">
-            <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] mb-4">// Professional History</h2>
+            <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] mb-4">Professional History</h2>
             <div className="space-y-4">
               {EXPERIENCE.map((exp, index) => (
                 <div key={index} className="bg-[#0f0f0f] border border-gray-900 rounded p-5 flex justify-between items-start hover:border-gray-800 transition">
@@ -116,7 +116,7 @@ export default function App() {
           {/* PROJECTS & PUBLICATIONS */}
           <section id="projects" className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] mb-4">// System Automation</h2>
+              <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] mb-4">System Automation</h2>
               {PROJECTS.map((proj, index) => (
                 <div key={index} className="bg-[#0f0f0f] border border-gray-900 rounded p-5 h-full flex flex-col justify-between hover:border-gray-800 transition">
                   <div>
@@ -129,7 +129,7 @@ export default function App() {
             </div>
 
             <div id="articles">
-              <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] mb-4">// Vulnerability Research (Medium)</h2>
+              <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] mb-4">Vulnerability Research (Medium)</h2>
               <div className="space-y-4">
                 {ARTICLES.map((art, index) => (
                   <div key={index} className="bg-[#0f0f0f] border border-gray-900 rounded p-4 hover:border-[#00ff66]/30 transition group">
