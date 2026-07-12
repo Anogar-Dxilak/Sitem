@@ -226,31 +226,31 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-gray-300 font-sans selection:bg-[#00ff66] selection:text-black">
+    <div className="min-h-screen bg-[#0a0a0a] text-gray-300 font-sans selection:bg-[#00ff66] selection:text-black overflow-x-hidden">
       
-      <header className="border-b border-gray-900 bg-[#0f0f0f]/80 backdrop-blur sticky top-0 z-50 px-6 py-2.5 flex flex-col items-center gap-2">
+      <header className="border-b border-gray-900 bg-[#0f0f0f]/80 backdrop-blur sticky top-0 z-50 px-4 sm:px-6 py-2 sm:py-2.5 flex flex-col items-center gap-1.5 sm:gap-2">
         <div className="flex items-center space-x-2 w-full justify-center">
-          <span className="h-3 w-3 rounded-full bg-[#00ff66] animate-pulse"></span>
-          <h1 className="font-mono font-bold text-xl tracking-wider text-white whitespace-nowrap">EGEMEN DER PORTFOLYO</h1>
+          <span className="h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full bg-[#00ff66] animate-pulse flex-shrink-0"></span>
+          <h1 className="font-mono font-bold text-base sm:text-xl tracking-wider text-white">EGEMEN DER PORTFOLYO</h1>
         </div>
-        <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 font-mono text-sm w-full">
+        <nav className="flex flex-wrap justify-center gap-x-3 sm:gap-x-6 gap-y-1.5 sm:gap-y-2 font-mono text-[11px] sm:text-sm w-full">
           <a href="#about" className="hover:text-[#00ff66] transition">About</a>
           <a href="#skills" className="hover:text-[#00ff66] transition">Skills</a>
           <a href="#experience" className="hover:text-[#00ff66] transition">Experience</a>
           <a href="#education" className="hover:text-[#00ff66] transition">Education</a>
-          <a href="#projects" className="hover:text-[#00ff66] transition">Projects & Articles</a>
+          <a href="#projects" className="hover:text-[#00ff66] transition">Projects</a>
           <a href="#references" className="hover:text-[#00ff66] transition">References</a>
         </nav>
       </header>
 
       {/* MAIN CONTAINER */}
-      <main className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <main className="max-w-7xl mx-auto px-3 sm:px-6 py-8 lg:py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
         
         {/* SOL VE ORTA ALAN (2 Kolon Kaplar) */}
         <div className="lg:col-span-2 space-y-12">
           
           {/* ABOUT / INTRO SECTION */}
-          <section id="about" className="bg-[#0f0f0f] border border-gray-900 rounded-lg p-6 space-y-6 scroll-mt-32">
+          <section id="about" className="bg-[#0f0f0f] border border-gray-900 rounded-lg p-4 sm:p-6 space-y-6 scroll-mt-32">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
               {/* Profil Resmi Alanı (Harika bir cyber-avatar tasarımı) */}
               <div className="relative group flex-shrink-0">
@@ -434,7 +434,7 @@ export default function App() {
 
         {/* SAĞ ALAN: INTERACTIVE TERMINAL WIDGET (1 Kolon Kaplar) */}
         <div className="lg:col-span-1">
-          <div className="sticky top-56 border border-gray-900 rounded-lg overflow-hidden shadow-2xl bg-[#050505]">
+          <div className="lg:sticky lg:top-20 border border-gray-900 rounded-lg overflow-hidden shadow-2xl bg-[#050505]">
             {/* Terminal Top Bar */}
             <div className="bg-[#0f0f0f] px-4 py-2 flex items-center justify-between border-b border-gray-900">
               <div className="flex space-x-2">
@@ -446,7 +446,7 @@ export default function App() {
             </div>
 
             {/* Terminal Body */}
-            <div ref={terminalBodyRef} className="p-4 h-[450px] overflow-y-auto font-mono text-xs space-y-2 flex flex-col text-left">
+            <div ref={terminalBodyRef} className="p-3 sm:p-4 h-[280px] sm:h-[380px] lg:h-[450px] overflow-y-auto font-mono text-xs space-y-2 flex flex-col text-left">
               <div className="flex-1">
                 {terminalHistory.map((line, index) => {
                   let colorClass = 'text-[#00ff66]'; // varsayılan neon yeşil
