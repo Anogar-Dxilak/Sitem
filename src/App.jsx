@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import CyberAttackBg from './components/CyberAttackBg';
 
 // Portfolyo Verileri
 const ABOUT = {
@@ -230,12 +231,12 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-gray-300 font-sans selection:bg-[#00ff66] selection:text-black">
       
-      <header className="border-b border-gray-900 bg-[#0f0f0f]/80 backdrop-blur sticky top-0 z-50 px-4 sm:px-6 py-2 sm:py-2.5 flex flex-col items-center gap-1.5 sm:gap-2 overflow-x-hidden">
-        <div className="flex items-center space-x-2 w-full justify-center">
-          <span className="h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full bg-[#00ff66] animate-pulse flex-shrink-0"></span>
+      <header className="border-b border-gray-900 bg-[#0f0f0f]/85 backdrop-blur sticky top-0 z-50 px-4 sm:px-6 py-3 sm:py-4 flex flex-col items-center gap-2 sm:gap-2.5 overflow-hidden relative">
+        <CyberAttackBg />
+        <div className="relative z-10 flex items-center space-x-2 w-full justify-center">
           <h1 className="font-mono font-bold text-base sm:text-xl tracking-wider text-white">EGEMEN DER PORTFOLYO</h1>
         </div>
-        <nav className="flex flex-wrap justify-center gap-x-3 sm:gap-x-6 gap-y-1.5 sm:gap-y-2 font-mono text-[11px] sm:text-sm w-full">
+        <nav className="relative z-10 flex flex-wrap justify-center gap-x-3 sm:gap-x-6 gap-y-1.5 sm:gap-y-2 font-mono text-[11px] sm:text-sm w-full">
           <a href="#about" className="text-gray-300 hover:text-[#00ff66] transition">Hakkımda</a>
           <a href="#skills" className="text-gray-300 hover:text-[#00ff66] transition">Yetenekler</a>
           <a href="#experience" className="text-gray-300 hover:text-[#00ff66] transition">Deneyim</a>
@@ -258,7 +259,7 @@ export default function App() {
               <div className="relative group flex-shrink-0">
                 <div className="absolute -inset-0.5 bg-[#00ff66] rounded-full blur opacity-25 group-hover:opacity-60 transition duration-1000"></div>
                 <div className="relative w-24 h-24 rounded-full bg-gray-955 border border-gray-800 flex items-center justify-center overflow-hidden">
-                  <img src="/profile.jpg" alt="Egemen Der" className="w-full h-full object-cover" />
+                  <img src="/profil.jpg" alt="Egemen Der" className="w-full h-full object-cover" />
                 </div>
               </div>
               
