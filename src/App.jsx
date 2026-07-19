@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import CyberAttackBg from './components/CyberAttackBg';
+import FeedbackSection from './components/FeedbackSection';
 
 // Portfolyo Verileri
 const ABOUT = {
@@ -1193,6 +1194,7 @@ export default function App() {
           <a href="#education" className="text-gray-300 hover:text-[#00ff66] transition">Eğitim</a>
           <a href="#projects" className="text-gray-300 hover:text-[#00ff66] transition">Projeler</a>
           <a href="#references" className="text-gray-300 hover:text-[#00ff66] transition">Referanslar</a>
+          <a href="#feedback" className="text-gray-300 hover:text-[#00ff66] transition">Geri Bildirim</a>
         </nav>
       </header>
 
@@ -1486,6 +1488,11 @@ export default function App() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Feedback Section */}
+        <div className="lg:col-span-3 col-span-1">
+          <FeedbackSection />
         </div>
 
       </main>
