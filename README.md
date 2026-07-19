@@ -80,7 +80,7 @@ npm run deploy
 * **E-Posta:** [egemender@hotmail.com](mailto:egemender@hotmail.com)
 * **LinkedIn:** [linkedin.com/in/egemen-der](https://linkedin.com/in/egemen-der)
 * **Medium:** [medium.com/@egemender](https://medium.com/@egemender)
-* **Konum:** Nilüfer, Bursa, Türkiye
+* **Konum:** Bursa, Türkiye
 
 ---
 
