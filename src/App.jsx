@@ -1253,7 +1253,7 @@ export default function App() {
           
           {/* SKILLS */}
           <section id="skills" className="space-y-6 scroll-mt-32">
-            <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] border-b border-gray-900 pb-2">Yetenekler & Uzmanlıklar</h2>
+            <h2 className="text-sm font-mono uppercase tracking-widest border-b border-gray-900 pb-2" style={{ color: '#00ff66' }}>Yetenekler & Uzmanlıklar</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {SKILL_CATEGORIES.map((cat, idx) => (
                 <div key={idx} className="bg-[#0f0f0f]/40 border border-gray-900 rounded p-4 space-y-3">
@@ -1272,7 +1272,7 @@ export default function App() {
 
           {/* EXPERIENCE */}
           <section id="experience" className="space-y-6 scroll-mt-32">
-            <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] border-b border-gray-900 pb-2">Mesleki Geçmiş</h2>
+            <h2 className="text-sm font-mono uppercase tracking-widest border-b border-gray-900 pb-2" style={{ color: '#00ff66' }}>Mesleki Geçmiş</h2>
             <div className="space-y-6">
               {EXPERIENCE.map((exp, index) => (
                 <div key={index} className="bg-[#0f0f0f] border border-gray-900 rounded-lg p-5 space-y-4 hover:border-gray-800 transition">
@@ -1299,7 +1299,7 @@ export default function App() {
 
           {/* EDUCATION */}
           <section id="education" className="bg-[#0f0f0f] border border-gray-900 rounded-lg p-5 space-y-5 scroll-mt-32">
-            <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] border-b border-gray-955 pb-2">Eğitim & Sertifikalar</h2>
+            <h2 className="text-sm font-mono uppercase tracking-widest border-b border-gray-955 pb-2" style={{ color: '#00ff66' }}>Eğitim & Sertifikalar</h2>
             
             <div className="space-y-4">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
@@ -1333,7 +1333,7 @@ export default function App() {
 
           <section id="projects" className="grid grid-cols-1 md:grid-cols-2 gap-6 scroll-mt-32">
             <div className="space-y-4">
-              <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] border-b border-gray-900 pb-2">Projeler</h2>
+              <h2 className="text-sm font-mono uppercase tracking-widest border-b border-gray-900 pb-2" style={{ color: '#00ff66' }}>Projeler</h2>
               {PROJECTS.map((proj, index) => {
                 const cardClass = "block bg-[#0f0f0f] border border-gray-900 rounded p-5 flex flex-col justify-between hover:border-[#00ff66]/40 transition group";
                 const inner = (
@@ -1355,7 +1355,7 @@ export default function App() {
             </div>
 
             <div id="articles" className="space-y-4">
-              <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] border-b border-gray-900 pb-2">Zafiyet Araştırmaları</h2>
+              <h2 className="text-sm font-mono uppercase tracking-widest border-b border-gray-900 pb-2" style={{ color: '#00ff66' }}>Zafiyet Araştırmaları</h2>
               <div className="space-y-4">
                 {ARTICLES.map((art, index) => (
                   <a key={index} href={ABOUT.contact.medium} target="_blank" rel="noopener noreferrer" className="block bg-[#0f0f0f] border border-gray-900 rounded p-4 hover:border-[#00ff66]/30 transition group">
@@ -1370,7 +1370,7 @@ export default function App() {
 
           {/* REFERENCES */}
           <section id="references" className="space-y-4 scroll-mt-32">
-            <h2 className="text-sm font-mono uppercase tracking-widest text-[#00ff66] border-b border-gray-900 pb-2">Referanslar</h2>
+            <h2 className="text-sm font-mono uppercase tracking-widest border-b border-gray-900 pb-2" style={{ color: '#00ff66' }}>Referanslar</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {REFERENCES.map((ref, idx) => (
                 <div key={idx} className="bg-[#0f0f0f] border border-gray-900 rounded-lg p-5 space-y-3">

@@ -130,12 +130,18 @@ export default function FeedbackSection() {
       <h2 className="text-2xl sm:text-3xl font-bold text-center text-white mb-2 font-mono tracking-tight">
         Geri Bildirim & Değerlendirme
       </h2>
-      <p className="text-center text-gray-400 font-mono text-xs sm:text-sm max-w-xl mx-auto mb-5 sm:mb-6 mt-2 leading-relaxed">
+      <p className="text-center text-gray-400 font-mono mt-3">
         Sitedeki deneyiminizi, önerilerinizi veya Red Team projelerim hakkındaki düşüncelerinizi doğrudan iletebilirsiniz.
       </p>
 
+      {/* Spacer */}
+      <div style={{ height: '2rem' }}></div>
+
       {/* Form Container (Ortalanmış ve Genişletilmiş) */}
       <div className="max-w-2xl mx-auto bg-black/60 backdrop-blur-xl border border-gray-800 hover:border-[#00ff66]/40 p-6 sm:p-10 rounded-2xl shadow-2xl transition-all duration-300 relative group">
+        <div className="absolute -top-3 left-6 bg-[#0a0a0a] px-3 text-[10px] font-mono text-[#00ff66] border border-[#00ff66]/30 rounded">
+          FEEDBACK_FORM_INPUT
+        </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Name & Category Grid */}
