@@ -1259,45 +1259,38 @@ export default function App() {
 
             {/* İletişim Detayları Grid & Sosyal Bağlantılar */}
             <div className="pt-4 border-t border-gray-900 text-xs font-mono">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-start">
-                {/* Sol Kolon */}
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-2">
-                    <span className="text-gray-500 shrink-0 select-none">{t.about.contactLabels.location}</span>
-                    <span className="text-gray-300">{t.about.contactValues.location}</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="text-gray-500 shrink-0 select-none">{t.about.contactLabels.phone}</span>
-                    <a href="tel:+905528252610" className="text-gray-300 hover:text-[#00ff66] transition whitespace-nowrap">+90 552 825 26 10</a>
-                  </div>
-                  {/* Diller (Alt alta) */}
-                  <div className="pt-1 flex flex-col space-y-1.5">
-                    <span className="text-gray-500 shrink-0 select-none font-semibold">{t.about.contactLabels.languages}</span>
-                    <ul className="space-y-1 text-gray-300 pl-1">
-                      {(t.about.contactValues.languagesItems || ['İngilizce B1', 'Türkçe (Anadil)']).map((langItem, idx) => (
-                        <li key={idx} className="flex items-center space-x-2">
-                          <span className="text-[#00ff66] text-[10px]">▪</span>
-                          <span>{langItem}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+                
+                {/* Diller */}
+                <div className="flex items-center space-x-2">
+                  <span className="text-gray-500 shrink-0 select-none">{t.about.contactLabels.languages}</span>
+                  <span className="text-gray-300 whitespace-nowrap">
+                    {t.about.contactValues.languagesItems ? t.about.contactValues.languagesItems.join(', ') : 'İngilizce B1, Türkçe (Anadil)'}
+                  </span>
                 </div>
 
-                {/* Sağ Kolon */}
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-2">
-                    <span className="text-gray-500 shrink-0 select-none">{t.about.contactLabels.email}</span>
-                    <a href="mailto:egemender@hotmail.com" className="text-gray-300 hover:text-[#00ff66] transition break-all">egemender@hotmail.com</a>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="text-gray-500 shrink-0 select-none">{t.about.contactLabels.military}</span>
-                    <span className="text-gray-300">{t.about.contactValues.military}</span>
-                  </div>
-                  {/* Sosyal Medya Bağlantıları (Askerlik kısmının altında, Diller ile hizada) */}
-                  <div className="pt-1 flex flex-wrap items-center gap-2">
-                    <a
-                      href="https://linkedin.com/in/egemen-der"
+                {/* Telefon */}
+                <div className="flex items-center space-x-2">
+                  <span className="text-gray-500 shrink-0 select-none">{t.about.contactLabels.phone}</span>
+                  <a href="tel:+905528252610" className="text-gray-300 hover:text-[#00ff66] transition whitespace-nowrap">+90 552 825 26 10</a>
+                </div>
+
+                {/* E-posta */}
+                <div className="flex items-center space-x-2">
+                  <span className="text-gray-500 shrink-0 select-none">{t.about.contactLabels.email}</span>
+                  <a href="mailto:egemender@hotmail.com" className="text-gray-300 hover:text-[#00ff66] transition break-all">egemender@hotmail.com</a>
+                </div>
+
+                {/* Askerlik */}
+                <div className="flex items-center space-x-2">
+                  <span className="text-gray-500 shrink-0 select-none">{t.about.contactLabels.military}</span>
+                  <span className="text-gray-300 whitespace-nowrap">{t.about.contactValues.military}</span>
+                </div>
+                
+                {/* Sosyal Medya Bağlantıları */}
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://linkedin.com/in/egemen-der"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-xs bg-gray-950 border border-gray-800 text-gray-400 hover:text-[#00ff66] hover:border-[#00ff66]/60 px-3 py-1.5 rounded-lg transition flex items-center space-x-1.5 group"
@@ -1331,7 +1324,6 @@ export default function App() {
                     </a>
 
                   </div>
-                </div>
               </div>
             </div>
           </section>
