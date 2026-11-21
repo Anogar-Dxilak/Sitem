@@ -1466,8 +1466,9 @@ export default function App() {
                     <p className="text-xs text-gray-500 font-mono">{ref.company} / {ref.role}</p>
                   </div>
                   <div className="space-y-1 text-xs font-mono text-gray-400 pt-2 border-t border-gray-955">
-                    <div>{t.references.phoneLabel} <a href={`tel:${ref.phone}`} className="text-gray-400 hover:text-[#00ff66] transition">{ref.phone}</a></div>
-                    <div>{t.references.emailLabel} <a href={`mailto:${ref.email}`} className="text-gray-400 hover:text-[#00ff66] transition">{ref.email}</a></div>
+                    {ref.phone && <div>{t.references.phoneLabel} <a href={`tel:${ref.phone}`} className="text-gray-400 hover:text-[#00ff66] transition">{ref.phone}</a></div>}
+                    {ref.email && <div>{t.references.emailLabel} <a href={`mailto:${ref.email}`} className="text-gray-400 hover:text-[#00ff66] transition">{ref.email}</a></div>}
+                    {!ref.phone && !ref.email && <div className="text-gray-500 italic">{t.references.onRequest}</div>}
                   </div>
                 </div>
               ))}

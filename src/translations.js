@@ -16,7 +16,7 @@ export const TRANSLATIONS = {
       title: 'Bilgisayar Mühendisi | Siber Güvenlik & Red Team',
       cvBtn: 'CV (PDF)',
       cvUrl: '/documents/egemen_der_cv_tr.pdf',
-      intro: 'İskenderun Teknik Üniversitesi Bilgisayar Mühendisliği mezunuyum. SOC operasyonlarında aktif olarak görev aldım ve bu süreçte SIEM yönetimi (Splunk, QRadar, Wazuh), güvenlik duvarı yapılandırmaları (FortiGate, pfSense) ve zafiyet tarama araçları (Nessus, Qualys, OpenVAS) konularında deneyim kazandım. Log analizi yapma, tehditleri erken aşamada tespit etme, ağ trafiğini inceleme ve zararlı yazılımların davranışlarını analiz etme konularında kendimi sürekli geliştirdim. Red Team alanına özel bir ilgi duyuyorum ve hem saldırı hem de savunma tarafındaki yetkinliklerimi her gün daha ileri taşımaya çalışıyorum. Detaylara önem veren, ekip çalışmasına uyumlu ve sorumluluk almaktan çekinmeyen bir yapıya sahip. Üstlendiğim her işi titiz, planlı ve profesyonel bir yaklaşımla tamamlamayı önemsiyorum.',
+      intro: 'İskenderun Teknik Üniversitesi Bilgisayar Mühendisliği mezunuyum. Son olarak Nesil Teknoloji\'de Penetrasyon Testi stajı yaptım; web uygulaması ve ağ sızma testi süreçlerinde ekibe destek vererek keşif, zafiyet doğrulama ve raporlama aşamalarında pratik deneyim kazandım. Daha önce SOC tarafında SIEM yönetimi (Wazuh, Splunk, QRadar), IDS entegrasyonu ve log analizi üzerine çalışmış olmam, saldırı senaryolarını savunma tarafının gözünden de değerlendirebilmemi sağlıyor. Red Team alanında uzmanlaşmayı hedefliyorum. Detaylara önem veren, ekip çalışmasına uyumlu ve sorumluluk almaktan çekinmeyen bir yapıya sahibim.',
       contactLabels: {
         location: '📍 Konum:',
         email: '📧 E-posta:',
@@ -25,7 +25,7 @@ export const TRANSLATIONS = {
         languages: '🗣️ Diller:'
       },
       contactValues: {
-        location: 'Nilüfer, Bursa, Türkiye',
+        location: 'Ankara, Türkiye',
         military: 'Tamamlandı',
         languages: 'İngilizce B1, Türkçe (Anadil)',
         languagesItems: ['İngilizce B1', 'Türkçe (Anadil)']
@@ -34,27 +34,38 @@ export const TRANSLATIONS = {
     skills: {
       sectionTitle: 'Yetenekler & Uzmanlıklar',
       categories: [
-        { name: 'SIEM', skills: ['Splunk', 'IBM QRadar', 'Wazuh'] },
-        { name: 'Kali Linux Araçları', skills: ['BurpSuite', 'Searchsploit', 'Nmap', 'Metasploit', 'Nikto'] },
+        { name: 'Offensive Security', skills: ['Burp Suite', 'Nmap', 'Metasploit', 'Searchsploit', 'Nikto', 'Kali Linux'] },
         { name: 'Zafiyet Analizi', skills: ['Nessus', 'Qualys', 'OpenVAS'] },
-        { name: 'Firewall', skills: ['FortiGate', 'pfSense'] },
-        { name: 'Ağ Teknolojileri', skills: ['TCP/IP', 'OSI Layers', 'LAN/DNS', 'TCP/UDP', 'VPN', 'Wireshark', 'Whois', 'URLVoid', 'Phishing Analysis'] },
-        { name: 'SOC Tecrübesi', skills: ['Log Analysis', 'Detection', 'Packet Analysis', 'Malware Analysis', 'Online Sandbox'] }
+        { name: 'SIEM', skills: ['Splunk', 'IBM QRadar', 'Wazuh'] },
+        { name: 'Firewall / IDS', skills: ['FortiGate', 'pfSense', 'Suricata'] },
+        { name: 'Ağ', skills: ['TCP/IP', 'OSI Layers', 'LAN', 'DNS', 'TCP/UDP', 'VPN', 'Wireshark', 'Whois', 'URLVoid', 'Phishing Analysis', 'Authentication'] },
+        { name: 'SOC Tecrübesi', skills: ['Log Analysis', 'Detection', 'Packet Analysis', 'Malware Analysis', 'Online Sandbox'] },
+        { name: 'Programlama', skills: ['Python', 'C++', 'Java'] }
       ]
     },
     experience: {
       sectionTitle: 'Mesleki Geçmiş',
       items: [
         {
-          company: 'ION Bilgi Teknolojileri | Ankara',
-          role: 'SOC Stajyeri',
-          date: '2025 - 2025',
+          company: 'Nesil Teknoloji | Ankara',
+          role: 'Penetrasyon Testi Stajyeri',
+          date: '2026',
           bullets: [
-            'SOC operasyonları kapsamında Linux, Windows ve Windows Server platformlarında Wazuh SIEM entegrasyonunu başarıyla gerçekleştirdim.',
+            'Web uygulamalarına yönelik OWASP Top 10 odaklı sızma testlerinde ekiple birlikte görev aldım.',
+            'Ağ sızma testlerinin keşif ve zafiyet doğrulama aşamalarında çalıştım (Nmap, Burp Suite, Metasploit, Nessus).',
+            'Bulguların CVSS ile puanlanması ve düzeltme önerileri içeren test raporlarının hazırlanmasına katkı sağladım.',
+            'Düzeltme sonrası doğrulama (retest) çalışmalarında yer aldım.'
+          ]
+        },
+        {
+          company: 'ION Bilgi Teknolojileri | Ankara',
+          role: 'SOC Stajyer',
+          date: '2025',
+          bullets: [
+            'Linux, Windows ve Windows Server platformlarında Wazuh SIEM entegrasyonunu gerçekleştirdim.',
             'Wazuh’ta tehdit algılama yeteneklerini geliştirmek için özel kurallar ve uyarılar tasarlayıp uyguladım.',
-            'Windows sistemlerinde merkezi log yönetimi sağlamak amacıyla Suricata (IDS) kurulumunu tamamlayarak Wazuh ile entegre ettim.',
-            'Suricata kurulumu ve Wazuh entegrasyon süreçlerini kolaylaştırmak için kapsamlı bir teknik rapor hazırladım.',
-            'SQL enjeksiyonu tespiti ve dosya bütünlüğü izleme (File Integrity Monitoring) için Wazuh yapılandırmasını optimize ettim.'
+            'Windows sistemlerinde Suricata (IDS) kurulumunu tamamlayarak Wazuh ile entegre ettim ve süreç için kapsamlı bir teknik rapor hazırladım.',
+            'SQL enjeksiyonu tespiti ve dosya bütünlüğü izleme (FIM) için Wazuh yapılandırmasını optimize ettim.'
           ]
         },
         {
@@ -62,12 +73,10 @@ export const TRANSLATIONS = {
           role: 'Stajyer',
           date: '2023 - 2024',
           bullets: [
-            'Rastgele sayı dizilerinde belirli örüntüleri tespit etmek için bir C++ programı geliştirdim.',
-            'Java’da Nesne Yönelimli Programlama (OOP) prensiplerini kullanarak basit bir “Market Yönetim Sistemi” oluşturdum.',
-            'FreeRADIUS’u Kali Linux ortamına kurarak, merkezi kimlik doğrulama yönetimi için MySQL ile entegrasyonunu gerçekleştirdim.',
             'Penetrasyon testi sırasında DIWA sisteminde kritik bir “Admin NoPass” SQL açığını keşfettim ve düzeltme önerileriyle birlikte raporladım.',
-            'Ağ segmentasyonu sağlamak için pfSense güvenlik duvarını kurdum ve Ubuntu Server ile yapılandırdım.',
-            'Ubuntu Server üzerinde pfSense için yeni bir ağ arayüzü derledim ve başarıyla entegre ettim.'
+            'FreeRADIUS’u Kali Linux ortamına kurarak merkezi kimlik doğrulama için MySQL ile entegre ettim.',
+            'Ağ segmentasyonu için pfSense güvenlik duvarını kurup Ubuntu Server ile yapılandırdım; pfSense için yeni bir ağ arayüzü derleyerek entegre ettim.',
+            'Rastgele sayı dizilerinde örüntü tespiti yapan bir C++ programı geliştirdim.'
           ]
         }
       ]
@@ -79,7 +88,7 @@ export const TRANSLATIONS = {
       date: '2020 - 2025',
       focusLabel: '🎯 Odak:',
       focus: 'Offensive Cybersecurity, Ağ ve Sistem Savunması',
-      activities: 'Başkan Yardımcısı, ISTE Siber Kulübü (2023–2025)',
+      activities: 'Başkan Yardımcısı, ISTE Siber Kulübü (2023–2024)',
       activities2: 'İletişim Sorumlusu, ISTE Siber Kulübü (2021–2023)',
       certificationsHeader: 'Sertifikalar:',
       verifyBtn: 'Doğrula →',
@@ -128,13 +137,12 @@ export const TRANSLATIONS = {
       sectionTitle: 'Referanslar',
       phoneLabel: '📱 Telefon:',
       emailLabel: '📧 E-posta:',
+      onRequest: 'İletişim bilgileri talep halinde paylaşılır.',
       items: [
         {
           name: 'Alican Göktepe',
           company: 'ION Bilgi Teknolojileri',
-          role: 'Kurucu',
-          phone: '+90 535 550 72 39',
-          email: 'alican.goktepe@ion.net.tr'
+          role: 'Kurucu'
         }
       ]
     },
@@ -220,7 +228,7 @@ export const TRANSLATIONS = {
       title: 'Computer Engineer | Cybersecurity & Red Team',
       cvBtn: 'CV (PDF)',
       cvUrl: '/documents/egemen_der_cv_en.pdf',
-      intro: 'I graduated from Iskenderun Technical University with a degree in Computer Engineering. I actively worked in SOC operations, gaining extensive hands-on experience in SIEM management (Splunk, QRadar, Wazuh), firewall configurations (FortiGate, pfSense), and vulnerability assessment tools (Nessus, Qualys, OpenVAS). I continuously sharpen my skills in log analysis, early threat detection, packet analysis, and malware behavior analysis. Passionate about Red Teaming, I aim to elevate both my offensive and defensive capabilities every day. I am detail-oriented, a team player, and dependable, committed to completing every assignment with precision, structure, and professionalism.',
+      intro: 'I am a Computer Engineering graduate from Iskenderun Technical University. Most recently, I completed a Penetration Testing internship at Nesil Teknoloji, where I supported the team in web application and network penetration testing engagements and gained hands-on experience in reconnaissance, vulnerability validation and reporting. My previous SOC experience with SIEM management (Wazuh, Splunk, QRadar), IDS integration and log analysis allows me to evaluate attack scenarios from the defender\'s perspective as well. I aim to specialize in Red Teaming. I am detail-oriented, collaborative and not afraid to take ownership of my work.',
       contactLabels: {
         location: '📍 Location:',
         email: '📧 Email:',
@@ -229,7 +237,7 @@ export const TRANSLATIONS = {
         languages: '🗣️ Languages:'
       },
       contactValues: {
-        location: 'Nilüfer, Bursa, Turkey',
+        location: 'Ankara, Türkiye',
         military: 'Completed',
         languages: 'English B1, Turkish (Native)',
         languagesItems: ['English B1', 'Turkish (Native)']
@@ -238,40 +246,49 @@ export const TRANSLATIONS = {
     skills: {
       sectionTitle: 'Skills & Expertise',
       categories: [
+        { name: 'Offensive Security', skills: ['Burp Suite', 'Nmap', 'Metasploit', 'Searchsploit', 'Nikto', 'Kali Linux'] },
+        { name: 'Vulnerability Analysis', skills: ['Nessus', 'Qualys', 'OpenVAS'] },
         { name: 'SIEM', skills: ['Splunk', 'IBM QRadar', 'Wazuh'] },
-        { name: 'Kali Linux Tools', skills: ['BurpSuite', 'Searchsploit', 'Nmap', 'Metasploit', 'Nikto'] },
-        { name: 'Vulnerability Assessment', skills: ['Nessus', 'Qualys', 'OpenVAS'] },
-        { name: 'Firewalls', skills: ['FortiGate', 'pfSense'] },
-        { name: 'Network Technologies', skills: ['TCP/IP', 'OSI Layers', 'LAN/DNS', 'TCP/UDP', 'VPN', 'Wireshark', 'Whois', 'URLVoid', 'Phishing Analysis'] },
-        { name: 'SOC Experience', skills: ['Log Analysis', 'Detection', 'Packet Analysis', 'Malware Analysis', 'Online Sandbox'] }
+        { name: 'Firewall / IDS', skills: ['FortiGate', 'pfSense', 'Suricata'] },
+        { name: 'Networking', skills: ['TCP/IP', 'OSI Layers', 'LAN', 'DNS', 'TCP/UDP', 'VPN', 'Wireshark', 'Whois', 'URLVoid', 'Phishing Analysis', 'Authentication'] },
+        { name: 'SOC Experience', skills: ['Log Analysis', 'Detection', 'Packet Analysis', 'Malware Analysis', 'Online Sandbox'] },
+        { name: 'Programming', skills: ['Python', 'C++', 'Java'] }
       ]
     },
     experience: {
       sectionTitle: 'Professional Experience',
       items: [
         {
-          company: 'ION Information Technologies | Ankara',
-          role: 'SOC Intern',
-          date: '2025 - 2025',
+          company: 'Nesil Teknoloji | Ankara',
+          role: 'Penetration Testing Intern',
+          date: '2026',
           bullets: [
-            'Successfully integrated Wazuh SIEM across Linux, Windows, and Windows Server platforms as part of SOC operations.',
-            'Designed and implemented custom detection rules and alert mechanisms in Wazuh to enhance threat detection capabilities.',
-            'Installed Suricata IDS on Windows environments and integrated it with Wazuh for centralized log management.',
-            'Authored a comprehensive technical report documenting Suricata deployment and Wazuh integration workflows.',
-            'Optimized Wazuh configurations for SQL injection detection and File Integrity Monitoring (FIM).'
+            'Took part in OWASP Top 10 focused web application penetration tests as part of the team.',
+            'Worked on the reconnaissance and vulnerability validation phases of network penetration tests (Nmap, Burp Suite, Metasploit, Nessus).',
+            'Contributed to CVSS-based scoring of findings and to test reports including remediation recommendations.',
+            'Participated in post-remediation verification (retest) activities.'
           ]
         },
         {
-          company: 'BgTek Cybersecurity | Bursa',
+          company: 'ION Bilgi Teknolojileri | Ankara',
+          role: 'SOC Intern',
+          date: '2025',
+          bullets: [
+            'Deployed Wazuh SIEM on Linux, Windows and Windows Server platforms for SOC operations.',
+            'Designed and implemented custom rules and alerts to enhance threat detection capabilities in Wazuh.',
+            'Installed Suricata (IDS) on Windows systems, integrated it with Wazuh, and wrote a detailed technical report on the process.',
+            'Optimized Wazuh configuration for SQL injection detection and file integrity monitoring (FIM).'
+          ]
+        },
+        {
+          company: 'BgTek Cyber Security | Bursa',
           role: 'Intern',
           date: '2023 - 2024',
           bullets: [
-            'Developed a C++ program to detect specific statistical patterns within pseudo-random number sequences.',
-            'Built an Object-Oriented (OOP) Market Management System in Java.',
-            'Installed FreeRADIUS on Kali Linux and configured MySQL integration for centralized authentication management.',
-            'Discovered a critical "Admin NoPass" SQL Injection vulnerability in the DIWA system during penetration testing, providing remediation recommendations.',
-            'Configured pfSense firewall with Ubuntu Server to establish network segmentation.',
-            'Compiled and successfully integrated a new network interface driver for pfSense on Ubuntu Server.'
+            'Discovered and reported a critical "Admin NoPass" SQL vulnerability in the DIWA system during penetration testing, including remediation suggestions.',
+            'Installed FreeRADIUS on Kali Linux and integrated it with MySQL for centralized authentication.',
+            'Set up a pfSense firewall with Ubuntu Server for network segmentation, and compiled and integrated a new network interface for pfSense.',
+            'Developed a C++ program to detect patterns in random number sequences.'
           ]
         }
       ]
@@ -283,7 +300,7 @@ export const TRANSLATIONS = {
       date: '2020 - 2025',
       focusLabel: '🎯 Focus:',
       focus: 'Offensive Cybersecurity, Network & System Defense',
-      activities: 'Vice President, ISTE Cyber Club (2023–2025)',
+      activities: 'Vice President, ISTE Cyber Club (2023–2024)',
       activities2: 'Communications Lead, ISTE Cyber Club (2021–2023)',
       certificationsHeader: 'Certifications:',
       verifyBtn: 'Verify →',
@@ -332,13 +349,12 @@ export const TRANSLATIONS = {
       sectionTitle: 'References',
       phoneLabel: '📱 Phone:',
       emailLabel: '📧 Email:',
+      onRequest: 'Contact details available upon request.',
       items: [
         {
           name: 'Alican Göktepe',
-          company: 'ION Information Technologies',
-          role: 'Founder',
-          phone: '+90 535 550 72 39',
-          email: 'alican.goktepe@ion.net.tr'
+          company: 'ION Bilgi Teknolojileri',
+          role: 'Founder'
         }
       ]
     },
